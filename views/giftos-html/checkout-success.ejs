@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán thành công</title>
+    <style>
+        /* Đặt nền và căn giữa */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        /* Hộp thông báo thành công */
+        .container {
+            max-width: 600px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 40px 20px;
+            text-align: center;
+            color: #333333;
+            transition: transform 0.3s ease;
+        }
+        
+        /* Hiệu ứng khi di chuột vào container */
+        .container:hover {
+            transform: scale(1.02);
+        }
+        
+        h2 {
+            color: #28a745; /* Màu xanh thành công */
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #666666;
+        }
+        
+        /* Nút tiếp tục mua sắm */
+        .btn-primary {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Hiệu ứng bo tròn cho alert */
+        .alert-success {
+            border-radius: 8px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-success" role="alert">
+            <h2>Thanh toán thành công!</h2>
+            <p>Cảm ơn bạn đã mua hàng. Đơn hàng của bạn đang được xử lý.</p>
+            <a href="/shop" class="btn btn-primary">Tiếp tục mua sắm</a>
+        </div>
+    </div>
+</body>
+</html>
